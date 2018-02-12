@@ -1,0 +1,12 @@
+{% extends 'news/base.html' %}
+{% block content %}
+  {% if news_list %}
+    {% for single_news in news_list %}
+      <h3 class="subtitle is-4">{{ single_news.title }}</h3>
+      <p>
+        {{ single_news.body }}
+      </p>
+      <hr>
+    {% endfor %}
+  {% endif %}
+{% endblock %}

@@ -1,0 +1,11 @@
+Django==1.8.18
+MySQL-python
+requests
+Pillow==2.9.0
+django-countries
+django-ckeditor
+django-multiselectfield
+django-webpack-loader
+djangorestframework==3.6.4
+django-widget-tweaks
+incf.countryutils

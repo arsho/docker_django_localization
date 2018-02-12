@@ -1,0 +1,59 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-02-12 13:42+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: localization_project/settings.py:105
+msgid "English"
+msgstr "Engelsk"
+
+#: localization_project/settings.py:106
+msgid "Norwegian"
+msgstr "norsk"
+
+#: localization_project/settings.py:107
+msgid "Bangla"
+msgstr ""
+
+#: news/templates/news/about.html:5
+msgid "About us"
+msgstr "om oss"
+
+#: news/templates/news/base.html:16
+msgid "News"
+msgstr "Nyheter"
+
+#: news/templates/news/base.html:19
+msgid "About"
+msgstr "Handle om"
+
+#: news/templates/news/base.html:51
+msgid "Select"
+msgstr "Plukke ut"
+
+#: news/templates/news/base.html:66
+msgid "Newspaper Website"
+msgstr "Avis-nettside"
+
+msgid "Welcome to Newspaper"
+msgstr "Velkommen til Avis"
+
+msgid "Newspaper Site"
+msgstr "Avissted"
+
+msgid "Some Publisher"
+msgstr "Noen utgiver"

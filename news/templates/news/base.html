@@ -1,76 +1,39 @@
 {% load i18n %}
 <html>
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Localization</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
-  </head>
-  <body>
-    <div class="container">
+</head>
+<body>
+<div class="container">
     <nav class="navbar is-light">
-      <div id="navbarExampleTransparentExample" class="navbar-menu">
-        <div class="navbar-start">
-          <a class="navbar-item is-light" href="/news">
-            <i class="fas fa-globe"></i>&nbsp;&nbsp;{% trans 'News' %}
-          </a>
-          <a class="navbar-item is-light" href="/news/about">
-            <i class="fas fa-info"></i>&nbsp;&nbsp;{% trans 'About' %}
-          </a>
+        <div id="navbarExampleTransparentExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item is-light" href="/news">
+                    <i class="fas fa-globe"></i>&nbsp;&nbsp;{% trans 'News' %}
+                </a>
+                <a class="navbar-item is-light" href="/news/about">
+                    <i class="fas fa-info"></i>&nbsp;&nbsp;{% trans 'About' %}
+                </a>
+            </div>
         </div>
-        <div class="navbar-end">
-          <div class="navbar-item">
-            <p>
-            <form action="{% url 'set_language' %}" method="post">
-              {% csrf_token %}
-              <input type="hidden" name="next" value="{{ redirect_to }}">
-              <div class="field has-addons">
-                <div class="control is-expanded has-icons-left">
-                  <div class="select is-fullwidth">
-                      <select name="language">
-                        {% get_current_language as LANGUAGE_CODE %}
-                        {% get_available_languages as LANGUAGES %}
-                        {% for language in LANGUAGES %}
-                          <option value="{{ language.0 }}"
-                            {% if language.0 == LANGUAGE_CODE %}
-                              selected = "selected"
-                            {% endif %}
-                          >
-                            {{ language.1 }} {{ language.0 }}
-                          </option>
-                        {% endfor %}
-                      </select>
-                      <span class="icon is-medium is-left">
-                        <i class="fas fa-language"></i>
-                      </span>
-                  </div>
-                </div>
-                <div class="control">
-                  <button type="submit" class="button is-primary">
-                    {% trans 'Select' %}
-                  </button>
-                </div>
-              </div>
-            </form>
-            </p>
-          </div>
-        </div>
-      </div>
     </nav>
-    </div>
-    <section class="hero">
-      <div class="hero-body">
+</div>
+<section class="hero">
+    <div class="hero-body">
         <div class="container">
-          <h1 class="has-text-centered title is-2">
-            {% trans 'Newspaper Website' %}
-          </h1>
+            <h1 class="has-text-centered title is-2">
+                {% trans 'Newspaper Website' %}
+            </h1>
         </div>
-      </div>
-    </section>
-    <div class="container">
-      {% block content %}
-      {% endblock %}
     </div>
-  </body>
+</section>
+<div class="container">
+    {% block content %}
+    {% endblock %}
+</div>
+</body>
 </html>

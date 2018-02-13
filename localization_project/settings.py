@@ -15,6 +15,7 @@ import os
 
 from django.utils.translation import ugettext_lazy as _
 
+
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
@@ -28,6 +29,14 @@ SECRET_KEY = ')zz7i%)^s6_g#^ge0^+&6009e)xk!)kwp7c+48oy5-d4r0%lvn'
 DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
+
+
+# Select language based on domain
+LANGUAGE_DOMAINS = {
+    'localhost:8000': 'bn',
+    'localhost:8001': 'no',
+    'localhost:8002': 'en'
+}
 
 
 # Application definition
@@ -60,6 +69,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.middleware.security.SecurityMiddleware',
+    'news.middleware.DomainLocalMiddleware'
 )
 
 ROOT_URLCONF = 'localization_project.urls'
@@ -131,3 +141,4 @@ STATIC_ROOT = './static'
 MEDIA_URL = '/media/'
 
 MEDIA_ROOT = './media'
+

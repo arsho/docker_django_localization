@@ -86,13 +86,21 @@ docker-compose run web python manage.py runserver
 * To add the messages in message file of different languages use:
     ```
     docker-compose run web django-admin makemessages -l 'bn
-    docker-compose run web django-admin makemessages -l 'no'    
+    docker-compose run web django-admin makemessages -l 'no'  
+    docker-compose run web django-admin makemessages -d djangojs --locale bn  
+    ```
+    
+* You can also add translation in `JS` files using `gettext()`.
+    After adding the translation in `JS` files add the messages in new message file:
+    ```
+    docker-compose run web django-admin makemessages -d djangojs --locale bn
     ```
     
 * Add translation of the messages in the message files:
     ```
     docker_django_localization/locale/no/LC_MESSAGES/django.po
     docker_django_localization/locale/bn/LC_MESSAGES/django.po
+    docker_django_localization/locale/bn/LC_MESSAGES/djangojs.po    
     ```
 
 * Compile the messages:

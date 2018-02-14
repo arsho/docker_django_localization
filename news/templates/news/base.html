@@ -1,11 +1,14 @@
+{% load static %}
 {% load i18n %}
 <html>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Localization</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
+    <script src="{% url 'django.views.i18n.javascript_catalog' %}"></script>
 </head>
 <body>
 <div class="container">
@@ -34,6 +37,10 @@
 <div class="container">
     {% block content %}
     {% endblock %}
+    <div id="js_content">
+    </div>
+    <script src="{% static 'news/js/test.js' %}"></script>
 </div>
+
 </body>
 </html>

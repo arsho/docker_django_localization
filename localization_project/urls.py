@@ -14,8 +14,15 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
+from django.conf import settings
+from django.conf.urls.static import static
+js_info_dict = {
+    'packages': ('news',),
+}
+
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^news/', include('news.urls', namespace = 'news')),
+    url(r'^jsi8n/$', 'django.views.i18n.javascript_catalog', js_info_dict),
 ]

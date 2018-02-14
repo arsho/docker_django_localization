@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-12 13:41+0000\n"
+"POT-Creation-Date: 2018-02-13 11:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,15 +18,15 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: localization_project/settings.py:105
+#: localization_project/settings.py:115
 msgid "English"
 msgstr ""
 
-#: localization_project/settings.py:106
+#: localization_project/settings.py:116
 msgid "Norwegian"
 msgstr ""
 
-#: localization_project/settings.py:107
+#: localization_project/settings.py:117
 msgid "Bangla"
 msgstr "বাংলা"
 
@@ -34,27 +34,26 @@ msgstr "বাংলা"
 msgid "About us"
 msgstr "আমাদের সম্পর্কে"
 
-#: news/templates/news/base.html:16
+#: news/templates/news/base.html:17
 msgid "News"
 msgstr "খবর"
 
-#: news/templates/news/base.html:19
+#: news/templates/news/base.html:20
 msgid "About"
 msgstr "সম্পর্কিত"
 
-#: news/templates/news/base.html:51
-msgid "Select"
-msgstr "নির্বাচন করুন"
-
-#: news/templates/news/base.html:66
+#: news/templates/news/base.html:30
 msgid "Newspaper Website"
 msgstr "সংবাদপত্র সাইট"
 
-msgid "Welcome to Newspaper"
-msgstr "সংবাদপত্রে স্বাগতম"
+#~ msgid "Select"
+#~ msgstr "নির্বাচন করুন"
 
-msgid "Newspaper Site"
-msgstr "সংবাদপত্র সাইট"
+#~ msgid "Welcome to Newspaper"
+#~ msgstr "সংবাদপত্রে স্বাগতম"
 
-msgid "Some Publisher"
-msgstr "কিছু প্রকাশক"
+#~ msgid "Newspaper Site"
+#~ msgstr "সংবাদপত্র সাইট"
+
+#~ msgid "Some Publisher"
+#~ msgstr "কিছু প্রকাশক"

@@ -87,7 +87,6 @@ docker-compose run web python manage.py runserver
     ```
     docker-compose run web django-admin makemessages -l 'bn
     docker-compose run web django-admin makemessages -l 'no'  
-    docker-compose run web django-admin makemessages -d djangojs --locale bn  
     ```
     
 * You can also add translation in `JS` files using `gettext()`.
@@ -129,3 +128,4 @@ In this branch we have no option for user selection of langauge.
 * [Official documentation for translation](https://docs.djangoproject.com/en/1.8/topics/i18n/translation/)
 * [Start Django project with Docker](http://mmorejon.github.io/en/blog/start-django-project-with-docker/)
 * [Switch language for domain in Django](https://7webpages.com/blog/switch-language-regarding-of-domain-in-django/)
+* [Localization: How to Create Language Files](https://djangobook.com/localization-create-language-files/)

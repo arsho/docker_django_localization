@@ -1,7 +1,7 @@
 django>=1.11.19
 MySQL-python
 requests
-Pillow==2.9.0
+Pillow>=3.3.2
 django-countries
 django-ckeditor
 django-multiselectfield

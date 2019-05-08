@@ -1,4 +1,4 @@
-Django==1.8.18
+django>=1.11.19
 MySQL-python
 requests
 Pillow==2.9.0

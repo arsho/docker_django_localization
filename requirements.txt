@@ -6,6 +6,6 @@ django-countries
 django-ckeditor
 django-multiselectfield
 django-webpack-loader
-djangorestframework==3.6.4
+djangorestframework==3.9.1
 django-widget-tweaks
 incf.countryutils
